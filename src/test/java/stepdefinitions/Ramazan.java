@@ -1,4 +1,4 @@
 package stepdefinitions;
 
-public class ramazan {
+public class Ramazan {
 }
