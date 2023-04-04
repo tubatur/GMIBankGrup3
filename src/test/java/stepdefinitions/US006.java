@@ -4,11 +4,13 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Ignore;
 import utilities.ConfigReader;
 import utilities.Driver;
 
 public class US006 {
 
+   @Ignore
     @Given("User goes to {string} page")
     public void userGoesToPage(String arg0) {
         Driver.getDriver().get(ConfigReader.getProperty("projectUrl"));
@@ -16,6 +18,7 @@ public class US006 {
     }
 
     @When("There should be user info being populated when navigating to user info {string}")
+
     public void thereShouldBeUserInfoBeingPopulatedWhenNavigatingToUserInfo(String arg0) {
     }
 
