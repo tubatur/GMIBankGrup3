@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"84f57abf-52c2-42d2-b0ab-a780afdce413","feature":"Login page should not be accessible with invalid credentials","scenario":"User try to open page with dont suitable information and page should offer some posibilties","start":1680391739878,"group":1,"content":"","tags":"@us005,","end":1680391740260,"className":"failed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"2dc1e797-fdab-495a-8d5f-bc0d55b6a1f6","feature":"Login Page Accessible with Valid Credentials","scenario":"There should be a valid username and password validating the success message to login","start":1680681703748,"group":1,"content":"","tags":"@dbtest,","end":1680681704356,"className":"failed"},{"id":"961e5f7b-d1ca-4413-a86f-241a11f34a0c","feature":"Login Page Accessible with Valid Credentials","scenario":"There should be an invalid username and password validating the fail message to login","start":1680681704391,"group":1,"content":"","tags":"@dbtest,","end":1680681704420,"className":"failed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
 });
