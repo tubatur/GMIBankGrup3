@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class PagesMZ {
     public PagesMZ() {
         PageFactory.initElements(Driver.getDriver(), this);
@@ -41,5 +43,30 @@ public class PagesMZ {
     @FindBy(xpath="//h1[@id='register-title']")
     public WebElement registrationtitel;
 
+    //US012 Ekleme(ilk 5 Findby burada da kullanildi)
+
+    @FindBy(xpath="//span[normalize-space()='My Operations']")
+    public WebElement myoperations;
+
+    @FindBy(xpath="//a[@href='/tp-customer']")
+    public WebElement managecustomers;
+
+    @FindBy(xpath="//table[@class='table']//thead")
+    public List<WebElement> custumerswebtablesheader;
+
+    @FindBy(xpath="//tbody/tr[1]/td[10]/div[1]/a[1]")
+    public WebElement viewilkeleman;
+    @FindBy(xpath="//tbody/tr[1]/td[10]/div[1]/a[2]")
+    public WebElement editilkeleman;
+    @FindBy(xpath="//tbody/tr[1]/td[10]/div[1]/a[3]")
+    public WebElement deleteilkeleman;
+    @FindBy(xpath="//span[contains(text(),'Edit')]")
+    public WebElement editiceleman;
+
+    @FindBy(className="col-md-8")
+    public WebElement createoredittitle;
+
+    @FindBy(xpath="//div[@id='gmibankfrontendApp.tPCustomer.delete.question']")
+    public WebElement deletesuremessage;
 
 }
