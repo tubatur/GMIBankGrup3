@@ -16,7 +16,7 @@ public class US006 {
  PagesRT pageRT = new PagesRT();
  Faker faker = new Faker();
 
-   @Ignore
+
     @Given("User goes to {string} page")
     public void userGoesToPage(String arg0) {
         Driver.getDriver().get(ConfigReader.getProperty("projectUrl"));

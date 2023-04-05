@@ -10,13 +10,15 @@ public class PagesRT {
 
     public PagesRT () {PageFactory.initElements(Driver.getDriver(),this);}
 
-    @FindBy(xpath="(//a[@aria-expanded='true'])[1]")
+
+    @FindBy(xpath="//a[@aria-expanded='true']")
     public WebElement signInRegister;
 
-    @FindBy(xpath="(//span[normalize-space()='Sign in'])[1]")
+
+    @FindBy(xpath="//span[normalize-space()='Sign in']")
     public WebElement signIn;
 
-    @FindBy(xpath="(//input[@id='username'])[1]")
+    @FindBy(xpath="//input[@id='username']")
     public WebElement username;
 
     @FindBy(xpath="(//input[@id='password'])[1]")
