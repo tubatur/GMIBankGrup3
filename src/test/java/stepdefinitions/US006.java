@@ -6,6 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Ignore;
+import org.openqa.selenium.Keys;
 import pages.PagesRT;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -25,6 +26,14 @@ public class US006 {
     @When("There should be user info being populated when navigating to user info {string}")
 
     public void thereShouldBeUserInfoBeingPopulatedWhenNavigatingToUserInfo(String arg0) {
+
+    pageRT.signInRegister.click();
+    pageRT.signIn.click();
+    pageRT.username.sendKeys("user2023"+Keys.TAB);
+    pageRT.newPassword.sendKeys("User.Name23");
+    pageRT.signInButon.click();
+    pageRT.userNameAndSurname.click();
+    pageRT.userInfo.click();
 
 
     }
