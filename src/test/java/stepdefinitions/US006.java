@@ -1,14 +1,19 @@
 package stepdefinitions;
 
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Ignore;
+import pages.PagesRT;
 import utilities.ConfigReader;
 import utilities.Driver;
 
 public class US006 {
+
+ PagesRT pageRT = new PagesRT();
+ Faker faker = new Faker();
 
    @Ignore
     @Given("User goes to {string} page")
@@ -20,6 +25,8 @@ public class US006 {
     @When("There should be user info being populated when navigating to user info {string}")
 
     public void thereShouldBeUserInfoBeingPopulatedWhenNavigatingToUserInfo(String arg0) {
+
+
     }
 
     @And("There should be {int} languages available {string}")
