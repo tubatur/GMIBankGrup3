@@ -69,4 +69,34 @@ public class PagesMZ {
     @FindBy(xpath="//div[@id='gmibankfrontendApp.tPCustomer.delete.question']")
     public WebElement deletesuremessage;
 
+    //US013 Ekleme(Ilk 5 Findby ve myoperations buradada kullanildi
+
+    @FindBy(xpath = "//span[normalize-space()='Manage Accounts']")
+    public WebElement manageaccounts;
+
+    @FindBy(xpath = "//span[normalize-space()='Create a new Account']")
+    public WebElement createanewaccount;
+
+    @FindBy(xpath = "//input[@id='tp-account-description']")
+    public WebElement description;
+
+    @FindBy(xpath = "//input[@id='tp-account-balance']")
+    public WebElement balance;
+
+    @FindBy(xpath ="//select[@id='tp-account-accountType']")
+    public WebElement accountType;
+
+    @FindBy(id = "tp-account-accountStatusType")
+    public WebElement accountStatusType;
+
+    @FindBy(xpath = "//select[@id='tp-account-employee']")
+    public WebElement employeedropdown;
+
+    @FindBy(xpath = "//button[@id='save-entity']")
+    public WebElement savebutton;
+
+    @FindBy(xpath ="//span[normalize-space()='Accounts']")
+    public WebElement accounttittle;
+
+
 }
