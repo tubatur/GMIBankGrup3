@@ -30,9 +30,9 @@ public class US004 {
 
     @When("I enter valid username and password")
     public void iEnterValidUsernameAndPassword() {
-        pagesTT.username.sendKeys(ConfigReader.getProperty("adminUserName"));
+        pagesTT.username.sendKeys(ConfigReader.getProperty("administrator"));
 
-        pagesTT.password.sendKeys(ConfigReader.getProperty("adminPassword"));
+        pagesTT.password.sendKeys(ConfigReader.getProperty("adminpassword"));
 
     }
 
@@ -50,9 +50,9 @@ public class US004 {
 
     @When("I enter invalid username and password")
     public void iEnterInvalidUsernameAndPassword() {
-        pagesTT.username.sendKeys(ConfigReader.getProperty("adminUserName")+ 0);
+        pagesTT.username.sendKeys(ConfigReader.getProperty("administrator")+ 0);
 
-        pagesTT.password.sendKeys(ConfigReader.getProperty("adminPassword"));
+        pagesTT.password.sendKeys(ConfigReader.getProperty("adminpassword"));
     }
 
     @Then("I should see the fail message")
