@@ -9,17 +9,13 @@ import utilities.Driver;
 
 public class PageRK {
 
-
-
-    public PageRK() {PageFactory.initElements(Driver.getDriver(), this);
-    }
-    @FindBy(xpath="(//a[@aria-haspopup='true'])[2]")
+    @FindBy(xpath = "(//a[@aria-haspopup='true'])[2]")
     public WebElement accountMenu;
 
-    @FindBy(xpath = "//div[@tabindex='-1']//a[@class='dropdown-item active']")
+    @FindBy(xpath = "(//span[text()='Register'])[1]")
     public WebElement registerButton;
 
-    @FindBy(xpath = "(//input[@name='ssn']")
+    @FindBy(xpath = "//input[@name='ssn']")
     public WebElement SSNBox;
 
     @FindBy(xpath = "//input[@name='firstname']")
@@ -41,15 +37,26 @@ public class PageRK {
     public WebElement emailBox;
 
     @FindBy(xpath = "//input[@name='firstPassword']")
-    public WebElement firstPasswordBox;
+    public WebElement newPasswordBox;
 
     @FindBy(xpath = "//input[@name='secondPassword']")
-    public WebElement secondPasswordBox;
+    public WebElement newPasswordConfirmationBox;
 
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement registerSubmitButton;
 
     @FindBy(xpath = "//div[@class='invalid-feedback']")
-    public WebElement errorMessage;
+    public WebElement errorMessageEmail;
 
+    @FindBy(xpath = "//div[@class='invalid-feedback']")
+    public WebElement errorMessageSSN;
+
+    @FindBy(xpath = "//div[@class='invalid-feedback']")
+    public WebElement errorMessageFirstName;
+
+    @FindBy(xpath = "//div[@class='invalid-feedback']")
+    public WebElement errorMessageNewPassword;
+
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[9]")
+    public WebElement errorMessageNewPasswordConfirmation;
 }
