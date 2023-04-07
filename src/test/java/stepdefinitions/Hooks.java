@@ -18,6 +18,7 @@ public class Hooks {
     public void setup() {
         Driver.getDriver().get(ConfigReader.getProperty("projectUrl"));
 
+
     }
 
     @After
