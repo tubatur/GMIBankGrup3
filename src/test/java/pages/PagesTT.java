@@ -27,4 +27,37 @@ public class PagesTT {
     public WebElement failText;
     @FindBy(css = "button[class='btn btn-secondary'] span")
     public WebElement cancel;
+
+
+    @FindBy(css = "li[id='entity-menu'] a[class='dropdown-toggle nav-link'] span")
+    public WebElement myOperations;
+
+    @FindBy(xpath = "//span[normalize-space()='Manage Customers']")
+    public WebElement manageCustomers;
+
+    @FindBy(css = "a[href='/tp-customer/9595/edit?page=1&sort=id,asc']")
+    public WebElement edit;
+
+    @FindBy(xpath = "//input[@id='tp-customer-address']")
+    public WebElement address;
+
+    @FindBy(xpath = "//input[@id='tp-customer-city']")
+    public WebElement city;
+
+    @FindBy(xpath = "//select[@id='tp-customer-country']")
+    public WebElement country;
+
+    @FindBy(xpath = "//input[@id='tp-customer-state']")
+    public WebElement state;
+
+
+
+
+
+
+
+
+
+
+
 }
