@@ -4,7 +4,7 @@ Feature: An Employee can create a new Account
   #User should provide a balance for the first time account creation as Dollar
   #User can select an account type as CHECKING, SAVING, CREDIT_CARD or INVESTING
   #Account status should be defined as ACTIVE, SUSPENDED or CLOSED
-  #User can select an employee from the drop-down
+  #User can select an employee from the drop-down *--
 
   Background:
     Given User go to the "https://gmibank.com/" web page

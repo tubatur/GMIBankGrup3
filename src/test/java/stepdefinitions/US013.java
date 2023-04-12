@@ -19,7 +19,7 @@ import java.util.List;
 
 import static utilities.Driver.driver;
 
-public class MustafaUS013StepDefinitions {
+public class US013 {
 
     PagesMZ pagesMZ = new PagesMZ();
 

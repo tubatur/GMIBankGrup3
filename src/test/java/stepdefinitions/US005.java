@@ -14,7 +14,7 @@ import utilities.Driver;
 
 import static utilities.Driver.driver;
 
-public class MustafaUS005StepDefinitions {
+public class US005 {
 
     PagesMZ pagesMZ = new PagesMZ();
 
