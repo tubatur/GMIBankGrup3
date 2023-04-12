@@ -6,8 +6,7 @@ Feature: An Employee can create a new Account
   #Account status should be defined as ACTIVE, SUSPENDED or CLOSED
   #User can select an employee from the drop-down *--
 
-  Background:
-    Given User go to the "https://gmibank.com/" web page
+
 
   @US013
   Scenario:The user must perform the necessary steps to create a new account by opening the site with an "Employee" account
