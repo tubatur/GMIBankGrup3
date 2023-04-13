@@ -6,8 +6,7 @@ Feature: An Employee can manage Customer
   #The Edit portal can allow user to create or update the user info
   #User can delete a customer, but seeing a message if the user is sure about deletion
 
-  Background:
-    Given User go to "https://gmibank.com/" web page
+
 
   @US012
   Scenario:By logging into the website as "Employee", viewing account information and checking the function of buttons such as edit,delete

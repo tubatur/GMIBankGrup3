@@ -31,12 +31,7 @@ public class US013 {
 
     String expected;
 
-    @Ignore
-    @Given("User go to the {string} web page") //Hook Class kullanilirsa gerek olmadigi icin atladim
-    public void userGoToTheWebPage(String arg0) {
-        Driver.getDriver().get(ConfigReader.getProperty("projectUrl"));
-        Driver.waitBasic(3);
-    }
+
 
     @When("Login to the systemm with employee account")
     public void loginToTheSystemmWithEmployeeAccount() {

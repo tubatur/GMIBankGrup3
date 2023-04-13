@@ -24,13 +24,7 @@ public class US012 {
     String actual;
 
     String expected;
-    @Ignore
-    @Given("User go to {string} web page")
-    public void userGoToWebPage(String arg0)  {
-        Driver.getDriver().get(ConfigReader.getProperty("projectUrl"));
-        Driver.waitBasic(2);
 
-    }
 
     @When("Login to the system with employee account")
     public void loginToTheSystemWithEmployeeAccount()  {

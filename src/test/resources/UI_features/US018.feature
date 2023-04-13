@@ -1,7 +1,6 @@
 Feature: An User can manage Customer
 
-  Background:
-    Given User go to "https://gmibank.com/" web page
+
 
   @US_018
   Scenario:By logging into the website as "User", viewing account information and checking the function of buttons such as edit,delete

@@ -24,12 +24,6 @@ public class US005 {
 
     String expected;
 
-    @Ignore
-    @Given("User goes to {string} web page") //Hook Class kullanilirsa gerek olmadigi icin atladim
-    public void userGoesToWebPage(String arg0) {
-       Driver.getDriver().get(ConfigReader.getProperty("projectUrl"));
-       Driver.waitBasic(3);
-    }
 
     @When("User cannot login with invalid username validating the error message")
     public void userCannotLoginWithInvalidUsernameValidatingTheErrorMessage() {

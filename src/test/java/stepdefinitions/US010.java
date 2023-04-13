@@ -9,6 +9,7 @@ import pages.PagesTT;
 import utilities.ConfigReader;
 import utilities.Driver;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class US010 {
@@ -65,7 +66,7 @@ public class US010 {
     public void userScrollsMouseDown() {
         JavascriptExecutor Scrool = (JavascriptExecutor) Driver.getDriver();
         Scrool.executeScript("window.scrollBy(0,300)", "");
-        Driver.getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
         @And("User clicks on address")
