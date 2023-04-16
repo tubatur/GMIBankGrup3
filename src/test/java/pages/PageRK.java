@@ -1,10 +1,9 @@
 package pages;
 
-import io.cucumber.java.zh_cn.假如;
+import org.bouncycastle.jcajce.provider.asymmetric.X509;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.w3c.dom.html.HTMLInputElement;
 import utilities.Driver;
 
 
@@ -20,6 +19,61 @@ public class PageRK {
 
     @FindBy(xpath = "(//span[text()='Register'])[1]")
     public WebElement registerButton;
+
+    @FindBy(xpath = "//*[@id=\"entity-menu\"]/a")
+    public WebElement myOperationsMenu;
+
+
+    @FindBy(xpath = "//span[normalize-space()='Manage Accounts']")
+    public WebElement manageAccount;
+
+    @FindBy(xpath = "//*[@id=\"entity-menu\"]/div/a[2]")
+    public WebElement transferMoney;
+
+
+    @FindBy(xpath = "//select[@id='fromAccountId']")
+    public WebElement fromBox;
+
+
+    @FindBy(xpath = "//select[@id='toAccountId']")
+    public WebElement toBox;
+
+
+    @FindBy(xpath = "//input[@id='balance']")
+    public WebElement balanceBox;
+
+
+    @FindBy(xpath = "//textarea[@id='description']")
+    public WebElement descriptionBox;
+
+    @FindBy(xpath = "//button[@id='make-transfer']")
+    public WebElement makeTransferButton;
+
+    @FindBy(xpath = "//*[@id=\"app-view-container\"]/div[1]/div/div/div/form/div[4]/div/div")
+    public WebElement invalidFeedback;
+
+    @FindBy(xpath = "//span[normalize-space()='Create a new Account']")
+    public WebElement newAccount;
+
+    @FindBy(xpath = "//input[@id='tp-account-description']")
+    public WebElement description;
+
+    @FindBy(xpath = "//input[@id='tp-account-balance']")
+    public WebElement balance;
+
+
+    @FindBy(xpath = "//input[@id='tp-account-createDate']")
+    public WebElement createDateBox;
+
+    @FindBy(xpath = "//input[@id='tp-account-closedDate']")
+    public WebElement closeDateBox;
+
+    @FindBy(xpath = "//span[normalize-space()='Save']")
+    public WebElement saveButton ;
+
+    @FindBy(xpath = "(//div[@role='alert'])[1]")
+    public WebElement alertMessage;
+
 
     @FindBy(xpath="//span[normalize-space()='Sign in']")
     public WebElement signIn;
