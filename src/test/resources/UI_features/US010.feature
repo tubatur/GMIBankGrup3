@@ -1,7 +1,7 @@
 Feature: Creation of customer's address
 
   Background:
-    Given User goes to "https://gmibank.com/" web page
+    Given User goes to "https://gmibank.com/" web page.
 
 
   @US010
