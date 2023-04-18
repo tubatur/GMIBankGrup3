@@ -85,8 +85,39 @@ public class PagesTT {
     @FindBy(css = "tr[id='benny'] button[type='button'] span")
     public WebElement deactivatedROLE_MANAGER;
 
-    @FindBy(xpath = "//tr[@id='chantay.grant']//span[contains(text(),'Deactivated')]")
+    @FindBy(xpath = "//tr[@id='michael']//span[contains(text(),'Deactivated')]")
     public WebElement deactivatedROLE_ADMIN;
+
+    @FindBy(xpath = "//a[@href='/admin/user-management/michael']//span[@class='d-none d-md-inline']//span[contains(text(),'View')]")
+    public WebElement viewROLE_ADMIN;
+
+    @FindBy(css = "div[class='view-routes'] div div h2 span")
+    public WebElement outputTextROLE_ADMIN;
+
+    @FindBy(css = "span[class='d-none d-md-inline'] span")
+    public WebElement back;
+
+    @FindBy(xpath = "//a[@href='/admin/user-management/benny/edit']//span[@class='d-none d-md-inline']//span[contains(text(),'Edit')]")
+    public WebElement editROLE_MANAGER;
+
+    @FindBy(css = "div[class='col-md-8'] h1 span")
+    public WebElement outputTextROLE_MANAGER;
+
+    @FindBy(xpath = "//a[@href='/admin/user-management/mocak/delete']//span[@class='d-none d-md-inline']//span[contains(text(),'Delete')]")
+    public WebElement deleteROLE_EMPLOYEE;
+
+    @FindBy(xpath = "//span[normalize-space()='Confirm delete operation']")
+    public WebElement outputTextROLE_EMPLOYEE;
+
+    @FindBy(xpath = "//button[@type='button']//span[contains(text(),'Delete')]")
+    public WebElement deleteButton;
+
+
+
+
+
+
+
 
 
 
